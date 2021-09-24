@@ -1,2 +1,2 @@
 # Rock-Paper-Scissors
-Rock Paper Scissors game created using Vanilla JS
+Implementation of the Rock Paper Scissors project from The Odin Project's "Foundations" path

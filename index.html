@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script src="./assets/scripts/script.js" defer></script>
+  </head>
+  <body>
+    <section class="navigation">
+      <nav class="nav-bar">
+        <header>
+          <a href="#">
+            <img
+              src="./assets/images/logo.svg"
+              alt="website logo"
+              class="logo"
+            />
+          </a>
+        </header>
+        <div class="nav-bar-links">
+          <a href="#">
+            <img
+              src="./assets/images/github.svg"
+              alt="Link to GitHub repo"
+              class="github-logo"
+            />
+          </a>
+        </div>
+      </nav>
+    </section>
+    <main class="container">
+      <div class="score">
+        <div class="text">
+          <div class="score-section player-section">
+            <div class="label">Player:&nbsp;</div>
+            <div class="score player-score">0</div>
+          </div>
+          <div class="score-section computer-section">
+            <div class="label">Computer:&nbsp;</div>
+            <div class="score computer-score">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="round-result">Player wins!</div>
+      <div class="user-choices">
+        <input
+          type="image"
+          src="./assets/images/_rock.svg"
+          class="user-choice rock"
+        />
+        <input
+          type="image"
+          src="./assets/images/_paper.svg"
+          class="user-choice paper"
+        />
+        <input
+          type="image"
+          src="./assets/images/_scissors.svg"
+          class="user-choice scissors"
+        />
+      </div>
+    </main>
+    <footer>
+      <p class="footer-text">Copyright &#169; ismayilkarimli</p>
+    </footer>
+    
+    <div class="message-box">
+      <div class="message-box-content">
+        <p class="message">Game Over</p>
+        <p class="message">Want to Play again?</p>
+        <button class="btn-restart">Restart</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>

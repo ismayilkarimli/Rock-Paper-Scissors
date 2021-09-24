@@ -1,0 +1,150 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background-color: #EEEEEE;
+    padding: 0 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    /* min-width: 80px; */
+    position: relative;
+    left: 16vw;
+    top: 3px;
+    /* padding: 6px 0; */
+}
+
+.github-logo {
+    position: relative;
+    right: 16vw;
+    width: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #EFB7B7;
+    padding: 10vh 3vw;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+}
+
+.score-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.round-result {
+    font-size: 3rem;
+    display: none;
+}
+
+.user-choices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-choice {
+    width: 19vw;
+    min-width: 100px;
+    margin: 18px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #EEEEEE;
+}
+
+.user-choice:hover {
+    background-color: #BD4B4B;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    height: 4vh;
+}
+
+.message-box {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 30px;
+    border: 2px solid #BD4B4B;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    font-size: 30px;
+}
+
+.message-box.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.btn-restart {
+    font-size: 24px;
+    width: 60%;
+    height: 60px;
+    background-color: #BD4B4B;
+    border: 1px solid #EEEEEE;
+    transition: 100ms ease-in-out;
+    border-radius: 10px;
+}
+
+.btn-restart:hover {
+    width: 60%;
+    height: 60px;
+    background-color: #EEEEEE;
+    border: 1px solid #BD4B4B;
+    transition: 100ms ease-in-out;
+    border-radius: 10px;
+}
